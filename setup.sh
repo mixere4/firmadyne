@@ -14,6 +14,7 @@ pushd $FIRMADYNE_INSTALL_DIR
 git clone https://github.com/mixere4/binwalk
 git clone --recursive https://github.com/firmadyne/firmadyne.git
 
+ln -sf /usr/bin/python3 /usr/bin/python
 # Set up binwalk
 pushd binwalk
 sudo ./deps.sh --yes
